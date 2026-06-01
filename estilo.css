@@ -1,0 +1,217 @@
+/* =============================================
+   ESTILO PROFESIONAL - TEMA AZULES
+   Tonos usados: Azul muy claro, Azul cielo, Azul medio, Azul oscuro
+============================================= */
+
+/* 🔹 RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: #f0f7ff; /* Azul muy claro - Fondo general */
+    padding: 20px 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 🔹 CONTENEDOR PRINCIPAL */
+.contenedor {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 24px rgba(13, 71, 161, 0.12); /* Sombra suave azulada */
+    border-top: 5px solid #0d47a1; /* Azul oscuro - Borde superior */
+}
+
+/* 🔹 TÍTULOS */
+h1, h2 {
+    text-align: center;
+    color: #0d47a1; /* Azul oscuro */
+    margin-bottom: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #1565c0; /* Azul medio */
+}
+
+/* 🔹 BOTONES */
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.boton {
+    display: block;
+    padding: 15px 20px;
+    background-color: #1976d2; /* Azul principal / medio */
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(25, 118, 210, 0.25);
+}
+
+.boton:hover {
+    background-color: #1565c0; /* Azul más oscuro al pasar el mouse */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(21, 101, 192, 0.3);
+}
+
+.boton.volver {
+    background-color: #64b5f6; /* Azul claro - Botón secundario */
+    color: #0a3d62; /* Texto azul oscuro */
+    box-shadow: 0 4px 12px rgba(100, 181, 246, 0.25);
+}
+
+.boton.volver:hover {
+    background-color: #42a5f5; /* Azul cielo más intenso */
+}
+
+/* 🔹 FORMULARIO */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+label {
+    font-weight: 500;
+    color: #0a3d62; /* Azul muy oscuro para texto */
+    font-size: 15px;
+}
+
+input, select {
+    padding: 14px 16px;
+    border: 2px solid #bbdefb; /* Azul muy claro - Borde */
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #fafdff;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #1976d2; /* Azul medio al enfocar */
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(25, 118, 210, 0.1);
+}
+
+/* 🔹 MENSAJES DE ESTADO */
+.exito {
+    background: #e3f2fd; /* Azul clarísimo */
+    color: #0d47a1; /* Azul oscuro */
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    border-left: 4px solid #2196f3; /* Azul brillante */
+    margin-bottom: 20px;
+}
+
+.error {
+    background: #ffebee;
+    color: #b71c1c;
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    border-left: 4px solid #f44336;
+    margin-bottom: 20px;
+}
+
+.aviso {
+    text-align: center;
+    color: #64748b;
+    padding: 30px 20px;
+    font-style: italic;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+/* 🔹 LISTA Y TARJETAS DE REGISTROS */
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.tarjeta {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #2196f3; /* Azul brillante */
+    box-shadow: 0 3px 10px rgba(13, 71, 161, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(13, 71, 161, 0.12);
+}
+
+.tarjeta h3 {
+    color: #0d47a1; /* Azul oscuro */
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.tarjeta p {
+    margin: 6px 0;
+    color: #2c3e50;
+    font-size: 15px;
+}
+
+.tarjeta p strong {
+    color: #1565c0; /* Azul medio */
+}
+
+/* 🔹 TEXTO INFORMATIVO */
+.info {
+    text-align: center;
+    color: #64b5f6; /* Azul claro */
+    font-size: 13px;
+    margin-top: 25px;
+    font-style: italic;
+}
+
+/* 🔹 DISEÑO RESPONSIVO (CELULAR) */
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 22px 18px;
+        margin: 0 8px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .boton {
+        font-size: 15px;
+        padding: 13px 16px;
+    }
+
+    .tarjeta {
+        padding: 16px;
+    }
+}
